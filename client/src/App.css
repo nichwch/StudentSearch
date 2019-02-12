@@ -1,0 +1,104 @@
+.container{
+  display:inline-block;
+  width:600px;
+  padding:20px;
+  transform:translateX(-50%);
+  margin-left:50%;
+}
+
+.masterContainer{
+  z-index:3;
+}
+
+.opacityLayer{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:white;
+  opacity:0.5;
+  z-index:0;
+}
+
+.background{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+#dropdown-basic-button{
+  background-color:white;
+  color:black;
+  border:1px solid black;
+  margin:5px;
+}
+
+.wbutton{
+  background-color:white;
+  color:black;
+  border:1px solid black;
+  transition:background-color 0.3s;
+  margin:5px;
+  border-radius:5px !important;
+}
+.wbutton:hover{
+  background-color:grey;
+}
+
+.preface{
+  margin:5px;
+}
+
+.searchBox{
+  margin:5px;
+  display:block;
+  width:100%;
+  font-size:100px;
+  border:none;
+  background-color:rgba(0, 0, 0, 0);
+  border-bottom:2px solid black;
+}
+
+.searchBox:focus{
+  outline:none;
+  border-width:4px;
+
+}
+
+.loadingDiv{
+  display:block;
+  margin:10px;
+  animation: App-logo-spin infinite 1s linear;
+  border:1px solid black;
+  height:30px;
+  width:30px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.loadingText{
+  text-align:center;
+  font-weight:bold;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .container{
+    display:inline-block;
+    width:250px;
+    padding:10px;
+  }
+  .searchBox{
+    font-size:50px;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
